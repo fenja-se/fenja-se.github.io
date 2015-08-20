@@ -38089,7 +38089,7 @@ fenja.rdbhost.jquery = $;
 fenja.rdbhost.get_post_sql = [cljs.core.str("SELECT * FROM blog.posts "), cljs.core.str("ORDER BY added ASC "), cljs.core.str("LIMIT %(limit) "), cljs.core.str("OFFSET %(offset)")].join("");
 fenja.rdbhost.get_posts = function(a) {
   var b = null != a && (a.cljs$lang$protocol_mask$partition0$ & 64 || a.cljs$core$ISeq$) ? cljs.core.apply.call(null, cljs.core.hash_map, a) : a, c = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "limit", "limit", -1355822363)), d = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "offset", "offset", 296498311)), e = cljs.core.get.call(null, b, new cljs.core.Keyword(null, "state", "state", -1988618099));
-  fenja.rdbhost.jquery.rdbHostConfig({domain:"rdbhost.fenja.se", userName:"p0000001598", authcode:"-"});
+  fenja.rdbhost.jquery.rdbHostConfig({userName:"p0000001598", authcode:"-"});
   return fenja.rdbhost.jquery.postData({q:fenja.rdbhost.get_post_sql, namedParams:{limit:c, offset:d}, callback:function(a, b, c, d, e) {
     return function(l) {
       return cljs.core.swap_BANG_.call(null, e, cljs.core.assoc, new cljs.core.Keyword(null, "posts", "posts", 760043164), cljs.core.mapv.call(null, function(a, b, c, d, e) {
