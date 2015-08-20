@@ -1,0 +1,48 @@
+body {
+  background: #e6b3d1;
+}
+
+header, main {
+  margin: 0 auto 20px auto;
+  width: 1260px;
+}
+
+header img {
+  display: block;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+main {
+  background-color: #e8dae1;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.inner-container {
+  padding: 5px 15px 15px 15px;
+}
+
+article {
+  margin-top: 10px;
+  background: #fff;
+  border: 1px solid #a3877f;
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
+}
+
+article > div {
+  padding: 10px;
+}
