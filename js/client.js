@@ -19655,7 +19655,7 @@ fenja.rdbhost.get_posts = function(a) {
         return function(a) {
           var b = a.id, c = a.title, d = a.body;
           clojure.string.split.call(null, a.added, /T/);
-          a = cljs.core.first.call(null, clojure.string.split.call(null, clojure.string.replace.call(null, a.added, /T/, " "), /\./));
+          a = (new Date([cljs.core.str(a.added), cljs.core.str("Z")].join(""))).toLocaleString();
           return new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null, "id", "id", -1388402092), b, new cljs.core.Keyword(null, "title", "title", 636505583), c, new cljs.core.Keyword(null, "body", "body", -2049205669), d, new cljs.core.Keyword(null, "added", "added", 2057651688), a], null);
         };
       }(a, b, c, d, e), m.records.rows));
